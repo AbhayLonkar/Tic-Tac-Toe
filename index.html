@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default n1">
+        <div class="col-md-6 col-sm-6">
+            <div class="navbar-header">
+                <span id="li">Tic-Tac-Toe</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav ">
+                    <li> <a href="https://abhaylonkar.github.io/Portfolio/">HOME</a> </li>
+                    <li> <a href="https://abhaylonkar.github.io/Portfolio/">ABOUT</a> </li>
+                    <li> <a href="#">CONTACT</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container-fluid">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+
+                <div class="infoTurn" id="changeTurn">Turn for X</div>
+                <div class="displayFlex">
+                    <div class="gameGrid">
+                        <div class="gameTiles bt0 bl0" onclick="Start(this)"></div>
+                        <div class="gameTiles bt0" onclick="Start(this)"></div>
+                        <div class="gameTiles bt0 br0" onclick="Start(this)"></div>
+                        <div class="gameTiles bl0" onclick="Start(this)"></div>
+                        <div class="gameTiles" onclick="Start(this)"></div>
+                        <div class="gameTiles br0" onclick="Start(this)"></div>
+                        <div class="gameTiles bl0 bb0" onclick="Start(this)"></div>
+                        <div class="gameTiles bb0" onclick="Start(this)"></div>
+                        <div class="gameTiles br0 bb0" onclick="Start(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="infoStats">ScoreBoard</div>
+                <div class="displayFlex counter">
+                    <div class="col-md-6 gameStatX">X
+                        <div class="col-md-12 forX">0</div>
+                        <div class="col-md-12">
+                            <button class="btn btn-default Mybtn" onclick="restart()">RESET</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 gameStatO">O
+                        <div class="col-md-12 forO">0</div>
+                        <div class="col-md-12">
+                            <button class="btn btn-default Mybtn" onclick="nextRound()">Next Round</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</html>

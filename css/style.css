@@ -1,0 +1,105 @@
+body{
+    background-color: #161616;
+    font-family: monospace;
+    color: white;
+}
+
+.n1{
+    background: #a70d0d;
+    border-color: #a70d0d;
+}
+
+#li{
+    font-size: 28px;
+    color: #161616;
+    font-weight: bold;
+    text-align: left;
+}
+
+#li:hover{
+    color: white
+}
+
+.displayFlex{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameGrid{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+
+.gameTiles{
+    border: 1px solid red;
+    font-size: 71px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.bt0{
+    border-top: 0;
+}
+
+.bb0{
+    border-bottom: 0;
+}
+
+.bl0{
+    border-left: 0;
+}
+
+.br0{
+    border-right: 0;
+}
+
+/* div{
+    border: 1px solid white;
+} */
+
+.counter{
+    font-size: 34px;
+}
+
+.infoTurn{
+    margin-top: 33px;
+    font-size: 30px;
+    font-family: Verdana;
+    color: #a70d0d;
+    text-align: center;
+}
+
+.infoStats{
+    margin-top: 33px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana;
+    color: #a70d0d;
+}
+
+.Mybtn{
+    background: #a70d0d;
+    color: #161616;
+    text-shadow: none;
+}
+
+.Mybtn:hover{
+    color: #a70d0d;
+}
+
+.gameStatX{
+    color: #a70d0d;
+}
+
+.gameStatO{
+    color: rgb(0 255 255);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #161616;
+    font-size: 23px;
+    font-weight: bold;
+}
